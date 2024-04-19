@@ -5,7 +5,6 @@ class Dish
 {
 private:
     string description;
-
 public:
     Dish() {
         return;
