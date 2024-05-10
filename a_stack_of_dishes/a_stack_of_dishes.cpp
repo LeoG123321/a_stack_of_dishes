@@ -15,7 +15,10 @@ int main()
 
     assert(dish_stack.size() == 0);
 
+    //Expected Pop Fail
     dish_stack.pop();
+
+    //Expected Peek Fail
     dish_stack.peek();
 
     Dish plate1("Red");
@@ -38,6 +41,7 @@ int main()
     assert(dish_stack.size() == 10);
     assert(dish_stack.peek().get_description() == "Yellow");
 
+    //Expected Push Fail
     dish_stack.push(plate1);
 
     dish_stack.reset();
